@@ -13,7 +13,7 @@ module.exports = {
         'my-color-theme-4': 'rgba(106, 196, 252, 1)',
         'my-color-theme-5': 'rgba(204, 106, 252, 1)',
         'my-color-theme-6': 'rgba(191, 190, 252, 1)',
-        'background': '#0f0f0f'
+        'background': '070F2B'
       }
     },
   },

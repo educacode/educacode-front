@@ -1,18 +1,17 @@
-
 function Contact() {
   return (
-    <>
-      <div className="max-w-md mx-auto p-6 bg-white bg-opacity-40 text-white rounded-lg shadow-md">
+    <div className="flex items-center h-screen bg-cyan-700">
+      <div className="max-w-md mx-auto p-9 bg-white bg-opacity-15 text-white rounded-lg shadow-md ">
         <h1 className="text-2xl font-bold mb-4">Entre em Contato</h1>
-        <form>
+        <form className="w-full">
           <div className="mb-4">
             <label htmlFor="name" className="block mb-2">Nome:</label>
             <input
               type="text"
               id="name"
               name="name"
-              value="Nome"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              placeholder="Nome completo"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md text-black"
               required
             />
           </div>
@@ -22,8 +21,8 @@ function Contact() {
               type="email"
               id="email"
               name="email"
-              value="email@example.com"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              placeholder="email@exemplo.com"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md text-black"
               required
             />
           </div>
@@ -32,16 +31,16 @@ function Contact() {
             <textarea
               id="message"
               name="message"
-              value="Sua mensagem aqui"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              placeholder="Sua mensagem aqui"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md text-black"
               required
             ></textarea>
           </div>
-          <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Enviar</button>
+          <button type="submit" className="bg-teal-900 text-white py-2 px-4 rounded-md hover:bg-teal-700">Enviar</button>
         </form>
       </div>
-    </>
-  )
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;

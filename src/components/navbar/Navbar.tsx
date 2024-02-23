@@ -1,27 +1,25 @@
-import { Link, useNavigate } from 'react-router-dom'
-import logoEducacode from '../../assets/educacode-logo.png'
-import './Navbar.css'
-function Navbar() {
+import { Link } from "react-router-dom";
 
-    return (
-        <>
-            <div className='w-full bg-my-color-theme-3 text-white flex justify-center py-4'>
-                <div className="container flex justify-between text-lg">
-                    <div className='logo flex'>
-                        <img src={logoEducacode} alt="Logo do Educacode" className='logo-image'/>
-                        {/* <div className='text-2xl font-bold uppercase'>Educacode</div> */}
-                        <div className='text-2xl font-bold uppercase flex items-center'>Educacode</div>
-                    </div>
-                    <div className='flex gap-4'>
-                        <Link to='/' className='hover:underline'>Home</Link>
-                        <Link to='/about' className='hover:underline'>Sobre</Link>
-                        <Link to='/contact' className='hover:underline'>Contato</Link>
-                        <div className='hover:underline'>Sair</div>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+function Navbar() {
+  return (
+    <div className='w-full text-black bg-cyan-900'>
+      <div className="container flex justify-between py-4 items-start">
+        <div className='logo flex items-center'>
+          <img src="https://i.imgur.com/CybAbAU.png" className="h-14" alt="EducaCode Logo" />
+          <div className='text-3xl font-bold uppercase ml-2'>Educacode</div>
+        </div>
+        <div className='flex gap-4'>
+          <div className='ml-auto flex gap-4 text-white'>
+            <Link to='/login' className='hover:underline'>Login</Link>
+            <Link to='/' className='hover:underline'>Home</Link>
+            <Link to='/about' className='hover:underline'>Sobre</Link>
+            <Link to='/contact' className='hover:underline'>Contato</Link>
+            <div className='hover:underline'>Sair</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
