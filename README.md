@@ -25,7 +25,7 @@ Este projeto é desenvolvido exclusivamente para fins acadêmicos como parte do 
 - [@Lucas Camargo](https://github.com/camargollucas)
 - [@Natália Oliveira](https://github.com/nataliabpo)
 
-## Stack utilizada
+## Stacks utilizada
 
 **Front-end:**
 <img src="https://img.icons8.com/?size=256&id=bzf0DqjXFHIW&format=png" alt="React" width="50">
