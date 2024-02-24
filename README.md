@@ -27,6 +27,6 @@ Este projeto é desenvolvido exclusivamente para fins acadêmicos como parte do 
 
 ## Stack utilizada
 
-**Front-end:** ![React](https://icons8.com/icon/bzf0DqjXFHIW/react), ![JavaScript](https://icons8.com/icon/39853/javascript), ![TypeScript](https://icons8.com/icon/vMqgHSToxrJR/typescript), ![Tailwind CSS](https://icons8.com/icon/qOFWMoaAQIdR/tailwind-css)
+**Front-end:** ![React](https://img.icons8.com/?size=256&id=bzf0DqjXFHIW&format=png), ![JavaScript](https://img.icons8.com/?size=256&id=39853&format=png), ![TypeScript](https://img.icons8.com/?size=256&id=vMqgHSToxrJR&format=png), ![Tailwind CSS](https://img.icons8.com/?size=256&id=CIAZz2CYc6Kc&format=png)
 
-**Back-end:** ![Java](https://icons8.com/icon/13679/java) ![Spring Framework](https://icons8.com/icon/90519/spring-boot)
+**Back-end:** ![Java](https://img.icons8.com/?size=256&id=2572&format=png) ![Spring Framework](https://img.icons8.com/?size=256&id=90519&format=png)
