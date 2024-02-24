@@ -27,6 +27,6 @@ Este projeto é desenvolvido exclusivamente para fins acadêmicos como parte do 
 
 ## Stack utilizada
 
-**Front-end:** 
+**Front-end:** ![React](https://icons8.com/icon/bzf0DqjXFHIW/react), ![JavaScript](https://icons8.com/icon/39853/javascript), ![TypeScript](https://icons8.com/icon/vMqgHSToxrJR/typescript), ![Tailwind CSS](https://icons8.com/icon/qOFWMoaAQIdR/tailwind-css)
 
-**Back-end:** Java com Spring Framework: A aplicação é desenvolvida em Java, fazendo uso do Spring Framework para facilitar o desenvolvimento e manutenção.
+**Back-end:** ![Java](https://icons8.com/icon/13679/java) ![Spring Framework](https://icons8.com/icon/90519/spring-boot)
