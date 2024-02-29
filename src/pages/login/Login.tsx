@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
@@ -18,7 +18,7 @@ function Login() {
   const {isLoading} = useContext(AuthContext) 
 
   useEffect(() => {
-    if (usuario && usuario.token !== "") {
+    if (usuario.token !== "") {
       navigate('/home');
     }
   }, [usuario]);

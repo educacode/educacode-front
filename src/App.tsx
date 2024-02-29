@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
@@ -7,25 +8,40 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Login from './pages/login/Login';
 import Cadastro from './pages/cadastro/Cadastro';
+import { AuthProvider } from './contexts/AuthContext';
+import { ToastContainer } from 'react-toastify';
+import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
+import FormularioCategoria from './components/categorias/formularioCategoria/FormularioCategoria';
+import ListaCategorias from './components/categorias/listaCategorias/ListaCategorias';
 
 function App() {
   return (
-    <div className="text-white bg-cyan-700">
+
+    <AuthProvider>
+      <ToastContainer />
       <BrowserRouter>
+        {/* para arrumar */}
         <Navbar />
-        <div className='container mx-auto p-2'>
-          <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/home" element={<Home />} />
-          </Routes>
+        <div className="text-white bg-cyan-700">
+          <div className='container mx-auto p-2'>
+            <Routes>
+              <Route path="/" element={<Login />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/categorias" element={<ListaCategorias />} />
+              <Route path="/cadastroCategoria" element={<FormularioCategoria/>} />
+              <Route path="/editarCategoria/:id" element={<FormularioCategoria />} />
+              <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
+              <Route path="/home" element={<Home />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </BrowserRouter>
-    </div>
+    </AuthProvider>
+
   );
 }
 
