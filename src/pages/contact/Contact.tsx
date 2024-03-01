@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="flex items-center h-screen bg-cyan-700">
+    <div className="flex items-center bg-cyan-700 h-screen">
       <div className="max-w-md mx-auto p-9 bg-white bg-opacity-15 text-white rounded-lg shadow-md ">
         <h1 className="text-2xl font-bold mb-4">Entre em Contato</h1>
         <form className="w-full">

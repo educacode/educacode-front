@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="container mx-auto px-4 py-8 text-black">
+    <div className="container mx-auto px-4 py-8 text-black ">
       <h2 className="text-3xl font-bold mt-4 mb-2">O que é o EducaCode?</h2>
       <p className="text-lg mb-4">Em um mundo cada vez mais digital, o EducaCode surge como uma ponte de possibilidades, democratizando o acesso à educação em tecnologia e construindo um futuro digital possível a todos. Imagine um universo onde jovens de origens diversas, independentemente de suas condições socioeconômicas, podem desenvolver as habilidades necessárias para prosperar na era digital. Essa é a visão inspiradora que impulsiona o EducaCode.</p>
 

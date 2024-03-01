@@ -21,17 +21,19 @@ function Navbar() {
     navbarComponent = (
       <div className='w-full text-black bg-cyan-900'>
         <div className="container flex justify-between py-4 items-start">
-          <div className='logo flex items-center'>
+          <div className='pl-8 logo flex items-center gap-2'>
             <img src="https://i.imgur.com/CybAbAU.png" className="h-14" alt="EducaCode Logo" />
             <div className='text-3xl font-bold uppercase ml-2'>Educacode</div>
           </div>
           <div className='flex gap-4'>
-            <div className='ml-auto flex gap-4 text-white'>
+            <div className='ml-auto flex gap-5 text-white'>
               <Link to='/home' className='hover:underline'>Home</Link>
               <Link to='/about' className='hover:underline'>Sobre</Link>
               <Link to='/contact' className='hover:underline'>Contato</Link>
-              <Link to='/cadastroCategoria' className='hover:underline'>Cadastrar categoria</Link>
-              <Link to='/cadastroProduto' className='hover:underline'>Produtos</Link>
+              <Link to='/produtos' className='hover:underline'>Ver produtos</Link>
+              <Link to='/categorias' className='hover:underline'>Categorias</Link>
+              <Link to='/cadastroCategoria' className='hover:underline'>Cadastrar nova categoria</Link>
+              <Link to='/cadastroProduto' className='hover:underline'>Cadastrar novo produto</Link>
               <Link to='' onClick={logout} className='hover:underline'>Sair</Link>
             </div>
           </div>

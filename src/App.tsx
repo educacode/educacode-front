@@ -26,7 +26,7 @@ function App() {
         {/* para arrumar */}
         <Navbar />
         <div className="text-white bg-cyan-700">
-          <div className='container mx-auto p-2'>
+          <div className='container mx-auto p-2 h-screen'>
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/login" element={<Login />} />

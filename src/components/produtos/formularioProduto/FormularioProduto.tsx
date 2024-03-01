@@ -72,7 +72,7 @@ function FormularioProduto() {
         if (id !== undefined) {
             buscarProdutoPorId(id);
             console.log(categorias);
-            
+
         }
     }, [id]);
 
@@ -144,7 +144,7 @@ function FormularioProduto() {
     return (
         <div className="container flex flex-col mx-auto items-center text-black">
             <h1 className="text-4xl text-center my-8">{id !== undefined ? 'Editar produto' : 'Cadastrar produto'}</h1>
-        {/* Formulário do produto */}
+            {/* Formulário do produto */}
             <form onSubmit={gerarNovoProduto} className="flex flex-col w-1/2 gap-4">
                 <div className="flex flex-col gap-2">
                     <label htmlFor="nome">Nome do produto</label>
@@ -152,7 +152,7 @@ function FormularioProduto() {
                         value={produto.nome}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="nome"
+                        placeholder="Nome do curso"
                         name="nome"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -164,7 +164,7 @@ function FormularioProduto() {
                         value={produto.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="descricao"
+                        placeholder="Descrição abreviada do curso"
                         name="descricao"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -176,7 +176,7 @@ function FormularioProduto() {
                         value={produto.conteudo}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="conteudo"
+                        placeholder="Conteúdo do curso"
                         name="conteudo"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -222,7 +222,7 @@ function FormularioProduto() {
                     <p>Categoria do produto</p>
                     <select name="categoria" id="categoria" className='border p-2 border-slate-800 rounded' onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)}>
                         <option value="" selected disabled>Selecione uma categoria</option>
-                        
+
                         {categorias.map((categoria) => (
                             <>
                                 <option value={categoria.id} >{categoria.tipo}</option>
