@@ -32,8 +32,8 @@ function FormularioProduto() {
         quantidade: 0,
         preco: 0,
         foto: '',
-        categoria: null
-        // usuario: null
+        categoria: null,
+        usuario: null
     });
 
     async function buscarProdutoPorId(id: string) {
@@ -87,8 +87,8 @@ function FormularioProduto() {
         setProduto({
             ...produto,
             [e.target.name]: e.target.value,
-            categoria: categoria
-            // usuario: usuario,
+            categoria: categoria,
+            usuario: usuario
         });
     }
 
@@ -133,7 +133,7 @@ function FormularioProduto() {
                     toastAlert('O token expirou, favor logar novamente', 'info')
                     handleLogout()
                 } else {
-                    toastAlert('Erro ao cadastrar a Produto', 'erro');
+                    toastAlert('Erro ao cadastrar o produto', 'erro');
                 }
             }
         }
