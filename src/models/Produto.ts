@@ -10,5 +10,5 @@ export default interface Produto {
   preco: number;
   foto: string;
   categoria?: Categoria | null;
-  usuario?: Usuario | null;
+  // usuario?: Usuario | null;
 }
