@@ -144,7 +144,7 @@ function FormularioProduto() {
     return (
         <div className="container flex flex-col mx-auto items-center text-black">
             <h1 className="text-4xl text-center my-8">{id !== undefined ? 'Editar produto' : 'Cadastrar produto'}</h1>
-
+        {/* Formulário de produto */}
             <form onSubmit={gerarNovoProduto} className="flex flex-col w-1/2 gap-4">
                 <div className="flex flex-col gap-2">
                     <label htmlFor="nome">Nome do produto</label>
