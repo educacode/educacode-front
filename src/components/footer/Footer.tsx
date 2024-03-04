@@ -1,6 +1,6 @@
 import { FacebookLogo, InstagramLogo, LinkedinLogo, Envelope, GithubLogo } from '@phosphor-icons/react';
 import educaLogo from "../../assets/educacode-logo2.png"
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toastAlert } from '../../utils/ToastAlert';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
@@ -22,7 +22,7 @@ function Footer() {
 
   if (usuario.token !== "") {
     footerComponent = (
-      <footer className="bg-cyan-700 text-black dark:bg-gray-900">
+      <footer className="bg-cyan-700 text-black dark:bg-sky-900">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
@@ -40,12 +40,12 @@ function Footer() {
               </ul>
               <ul className="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 <li className="mb-4">
-                  <a href="https://github.com/educacode" className="hover:underline text-zinc-400">Sobre</a>
+                  <Link to="/about" className="hover:underline text-zinc-400">Sobre</Link>
                 </li>
               </ul>
               <ul className="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 <li className="mb-4">
-                  <a href="https://github.com/educacode" className="hover:underline text-zinc-400">Contato</a>
+                  <Link to="/contato" className="hover:underline text-zinc-400">Contato</Link>
                 </li>
               </ul>
             </div>

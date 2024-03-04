@@ -16,6 +16,8 @@ import ListaCategorias from './components/categorias/listaCategorias/ListaCatego
 import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 import FormularioProduto from './components/produtos/formularioProduto/FormularioProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
+import "@fontsource/quicksand";
+
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
         {/* para arrumar */}
         <Navbar />
         <div className="text-white bg-cyan-500">
-          <div className='container min-h-screen mx-auto p-2 h-screen'>
+          <div className='container mx-auto p-2 min-h-screen'>
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/login" element={<Login />} />

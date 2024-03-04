@@ -1,7 +1,7 @@
 function Contact() {
   return (
-    <div className="flex items-center bg-cyan-700 h-screen">
-      <div className="max-w-md mx-auto p-9 bg-white bg-opacity-15 text-white rounded-lg shadow-md ">
+    <div className="flex items-center bg-cyan-500 min-h-screen">
+      <div className="max-w-md mx-auto p-11 bg-white bg-opacity-25 text-white rounded-lg shadow-md ">
         <h1 className="text-2xl font-bold mb-4">Entre em Contato</h1>
         <form className="w-full">
           <div className="mb-4">
@@ -11,7 +11,7 @@ function Contact() {
               id="name"
               name="name"
               placeholder="Nome completo"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md text-black"
+              className="w-full px-3 py-2 border border-gray-900 rounded-md text-black"
               required
             />
           </div>
@@ -36,7 +36,7 @@ function Contact() {
               required
             ></textarea>
           </div>
-          <button type="submit" className="bg-teal-900 text-white py-2 px-4 rounded-md hover:bg-teal-700">Enviar</button>
+          <button type="submit" className="bg-sky-900 text-white py-2 px-4 rounded-md hover:bg-sky-700">Enviar</button>
         </form>
       </div>
     </div>

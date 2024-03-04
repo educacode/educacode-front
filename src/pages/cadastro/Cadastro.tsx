@@ -79,20 +79,20 @@ function Cadastro() {
                             type="text"
                             id="nome"
                             name="nome"
-                            placeholder="Nome"
-                            className="border-2 border-cyan-400 rounded p-2 "
+                            placeholder="Nome completo"
+                            className="border-2 border-cyan-700 rounded p-2 "
                             value={usuario.nome}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
                     <div className="flex flex-col w-full text-cyan-100">
-                        <label htmlFor="usuario">Usuario</label>
+                        <label htmlFor="usuario">E-mail</label>
                         <input
                             type="text"
                             id="usuario"
                             name="usuario"
-                            placeholder="Usuario"
-                            className="border-2 border-cyan-400 rounded p-2 "
+                            placeholder="email@exemplo.com"
+                            className="border-2 border-slate-700 rounded p-2 "
                             value={usuario.usuario}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
@@ -103,8 +103,8 @@ function Cadastro() {
                             type="text"
                             id="foto"
                             name="foto"
-                            placeholder="Foto"
-                            className="border-2 border-cyan-400 rounded p-2"
+                            placeholder="URL de sua foto no formato .png (se possível)"
+                            className="border-2 border-slate-700 rounded p-2"
                             value={usuario.foto}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
@@ -115,8 +115,8 @@ function Cadastro() {
                             type="password"
                             id="senha"
                             name="senha"
-                            placeholder="Senha"
-                            className="border-2 border-slate-700 rounded p-2 border-cyan-400"
+                            placeholder="No mínimo 8 caracteres"
+                            className="border-2 border-slate-700 rounded p-2 "
                             value={usuario.senha}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
@@ -128,17 +128,17 @@ function Cadastro() {
                             id="confirmarSenha"
                             name="confirmarSenha"
                             placeholder="Confirmar Senha"
-                            className="border-2 border-cyan-400 rounded p-2"
+                            className="border-2 border-slate-700 rounded p-2"
                             value={confirmaSenha}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => handleConfirmarSenha(e)}
                         />
                     </div>
                     <div className="flex justify-around w-full gap-8">
                         <button className='rounded text-white bg-cyan-700 hover:bg-zinc-400 w-1/2 py-2' type='submit'>
-                            Cadastrar
+                            Finalizar
                         </button>
                         <button className='rounded text-white bg-red-400 hover:bg-red-300 w-1/2 py-2' onClick={back}>
-                            Cancelar
+                            Retornar à página inicial
                         </button>
                     </div>
                 </form>

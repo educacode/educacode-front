@@ -152,7 +152,7 @@ function FormularioProduto() {
                         value={produto.nome}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="Nome do curso"
+                        placeholder="Java Completo com uso de API's "
                         name="nome"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -164,7 +164,7 @@ function FormularioProduto() {
                         value={produto.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="Descrição abreviada do curso"
+                        placeholder="Curso de Java completo | SpringBoot | introdução a MySQL "
                         name="descricao"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -176,14 +176,14 @@ function FormularioProduto() {
                         value={produto.conteudo}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="Conteúdo do curso"
+                        placeholder="200 horas | 50 vídeos | Mais de 80 exercícios com correção"
                         name="conteudo"
                         required
                         className="border-2 border-slate-700 rounded p-2"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="preco">Preço do produto</label>
+                    <label htmlFor="preco">Preço do produto R$</label>
                     <input
                         value={produto.preco}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -195,7 +195,7 @@ function FormularioProduto() {
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="quantidade">Quantidade do produto</label>
+                    <label htmlFor="quantidade">Quantidade de produtos</label>
                     <input
                         value={produto.quantidade}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -212,7 +212,7 @@ function FormularioProduto() {
                         value={produto.foto}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="Insira a imagem do produto"
+                        placeholder="Insira a URL da imagem, de preferência arquivos .png"
                         name="foto"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -230,7 +230,7 @@ function FormularioProduto() {
                         ))}
                     </select>
                 </div>
-                <button disabled={carregandoCategoria} type='submit' className='rounded disabled:bg-slate-200 bg-indigo-400 hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto block py-2'>
+                <button disabled={carregandoCategoria} type='submit' className='rounded disabled:bg-sky-200 bg-indigo-400 hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto block py-2'>
                     {carregandoCategoria ? <span>Carregando</span> : id !== undefined ? 'Editar' : 'Cadastrar'}
                 </button>
             </form>
