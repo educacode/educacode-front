@@ -25,8 +25,8 @@ function App() {
       <BrowserRouter>
         {/* para arrumar */}
         <Navbar />
-        <div className="text-white bg-cyan-700">
-          <div className='container mx-auto p-2 h-screen'>
+        <div className="text-white bg-cyan-500">
+          <div className='container min-h-screen mx-auto p-2 h-screen'>
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/login" element={<Login />} />

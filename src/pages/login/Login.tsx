@@ -4,7 +4,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
 import UsuarioLogin from '../../models/UsuarioLogin';
 import { RotatingLines } from 'react-loader-spinner';
-
+import  logo01  from '../../assets/login01.jpeg';
+import  logo02  from '../../assets/login02.jpeg';
+import  logo03  from '../../assets/login03.jpeg';
+import  logo04  from '../../assets/login04.jpeg'
 
 function Login() {
   let navigate = useNavigate();
@@ -37,34 +40,34 @@ function Login() {
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold text-teal-950">
+      <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold text-teal-950 ">
         <form className="flex justify-center items-center flex-col w-1/2 gap-4" onSubmit={login}>
-          <h2 className="text-slate-900 text-5xl ">Entrar</h2>
-          <div className="flex flex-col w-full">
+          <h2 className="text-cyan-800 font-bold text-5xl">Entrar</h2>
+          <div className="flex flex-col w-full text-cyan-100">
             <label htmlFor="usuario">Usuário</label>
             <input
               type="text"
               id="usuario"
               name="usuario"
               placeholder="Usuario"
-              className="border-2 border-slate-700 rounded p-2"
+              className="border-2 border-slate-700 rounded p-2 border-cyan-400 "
               value={usuarioLogin.usuario}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full text-cyan-100 ">
             <label htmlFor="senha">Senha</label>
             <input
               type="password"
               id="senha"
               name="senha"
               placeholder="Senha"
-              className="border-2 border-slate-700 rounded p-2"
+              className="border-2 border-slate-700 rounded p-2 border-cyan-400"
               value={usuarioLogin.senha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <button type='submit' className="rounded bg-indigo-400 hover:bg-indigo-900 text-white w-1/2 py-2 flex justify-center">
+          <button type='submit' className="rounded bg-cyan-700 hover:bg-zinc-400 text-white w-1/2 py-2 flex justify-center">
             {isLoading ? <RotatingLines
               strokeColor="white"
               strokeWidth="5"
@@ -75,27 +78,27 @@ function Login() {
               <span>Entrar</span>}
           </button>
 
-          <hr className="border-slate-800 w-full" />
+          <hr className="border-slate-800 w-full border-cyan-400" />
 
-          <p>
+          <p className='text-cyan-700'>
             Ainda não tem uma conta?{' '}
-            <Link to="/cadastro" className="text-indigo-800 hover:underline">
+            <Link to="/cadastro" className="text-cyan-200 hover:underline">
               Cadastre-se
             </Link>
           </p>
         </form>
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-6 ">
           <div className="flex items-center justify-center flex-grow">
-            <img className="h-48 w-full max-w-full rounded-lg" src="https://t3.ftcdn.net/jpg/07/18/07/22/240_F_718072240_zWDG1uJ0e0BBqEaXeTA0g1aF0NTiU6JE.jpg" alt="" />
+            <img className="h-48 w-full max-w-full rounded-lg" src={logo01} alt="" />
           </div>
           <div className="flex items-center justify-center flex-grow">
-            <img className="h-48 w-full max-w-full rounded-lg" src="https://t4.ftcdn.net/jpg/07/08/01/95/240_F_708019537_VFMIetyPhHFOzhGdhEZm6jeFYxpEKREA.jpg" alt="" />
+            <img className="h-48 w-full max-w-full rounded-lg" src={logo02} alt="" />
           </div>
           <div className="flex items-center justify-center flex-grow">
-            <img className="h-48 w-full max-w-full rounded-lg" src="https://t3.ftcdn.net/jpg/07/08/01/82/240_F_708018293_IolPlj8bUQYJ8W11NVnZ3jD0xy5VW2mD.jpg" alt="" />
+            <img className="h-48 w-full max-w-full rounded-lg" src={logo03}alt="" />
           </div>
           <div className="flex items-center justify-center flex-grow">
-            <img className="h-48 w-full max-w-full rounded-lg" src="https://t4.ftcdn.net/jpg/06/52/88/65/240_F_652886511_MO30ydHJ9sf1KMrDLUyaH0PFWAnlBziV.jpg" alt="" />
+            <img className="h-48 w-full max-w-full rounded-lg" src={logo04} alt="" />
           </div>
         </div>
       </div>
