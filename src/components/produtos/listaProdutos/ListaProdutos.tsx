@@ -26,10 +26,10 @@ function ListaProdutos() {
 
   return (
     <>
-      <button className='rounded text-white bg-cyan-700 hover:bg-sky-600 w-1/6 py-2'>
+      <button className='rounded mx-auto my-4 text-white bg-cyan-700 hover:bg-sky-600 w-1/6 py-2'>
         <Link to='/'>Retornar à página inicial</Link>
       </button>
-      <div className='container mx-auto my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {produtos.map((produto) => (
           <CardProduto key={produto.id} produto={produto} />
         ))}

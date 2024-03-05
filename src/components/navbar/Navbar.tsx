@@ -51,8 +51,8 @@ function Navbar() {
       <nav className="w-full bg-sky-900 ">
         <div className="container justify-between py-4  flex">
           <div className='pl-8 logo flex items-center gap-2'>
-            <img src={educaLogo} className="h-14" alt="EducaCode Logo" />
-            <div className="inline-flex p-4 text-xl font-bold uppercase tracking-wider text-zinc-400">EducaCode</div>
+          <Link to='/'><img src={educaLogo} className="h-14" alt="EducaCode Logo" /></Link>
+            <div className="inline-flex p-4 text-xl font-bold uppercase tracking-wider text-zinc-400"><Link to='/'>EducaCode</Link></div>
           </div>
           <button
             onClick={toggleNavbar}

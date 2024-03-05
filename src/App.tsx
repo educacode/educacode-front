@@ -17,6 +17,8 @@ import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 import FormularioProduto from './components/produtos/formularioProduto/FormularioProduto';
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProduto';
 import "@fontsource/quicksand";
+import "@fontsource/exo";
+import DescricaoProdutos from './pages/descricaoProdutos/DescricaoProdutos';
 
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
               <Route path="/editarCategoria/:id" element={<FormularioCategoria />} />
               <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
               <Route path="/produtos" element={<ListaProdutos />} />
+              <Route path="/descricaoProdutos" element={<DescricaoProdutos />} />
               <Route path="/cadastroProduto" element={<FormularioProduto />} />
               <Route path="/editarProduto/:id" element={<FormularioProduto />} />
               <Route path="/deletarProduto/:id" element={<DeletarProduto />} />
